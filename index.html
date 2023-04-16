@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Voice Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="input">Tell me your math problem:</label>
+        <input type="text" id="input" name="input" readonly>
+        <button type="button" id="micButton">Speak</button>
+      </form>
+      <div class="container">
+        <div id="result" class="numbers">
+          <button id="buttons" onclick="displayImage('correct.jpg')"></button>
+          <button id="num1button" onclick="checkAnswer(this)"></button>
+          <button id="num2button" onclick="checkAnswer(this)"></button>
+          <button id="num3button" onclick="checkAnswer(this)"></button>
+        </div>
+        <div id="image-container" style="display: none;">
+          <img id="image" src="">
+        </div>
+      </div>    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
